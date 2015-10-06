@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+		
+		nav{
+			font-family: roboto;
+			background-color: #f5d76e;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+
+		
+		#landing {
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+
+		}
+
+		#landing-graphic  {
+
+		}
+
+		#body {
+			background-color: #f5d76e;
+		}
+
+		
+		h2 {
+			font-size: 4em;
+			font-family: Dosis, serif;
+			margin:10px;
+		}
+
+
+
+		a {
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		
+
+		#logoNav {
+			font-size: 2em;
+			font-weight: bold;
+			}
+
+		#deck {/*container for cards*/
+			display: flex;
+			flex-direction:column;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+		}
+
+		.card { /*class for each individual card*/
+			flex:1;
+			background-color:white;
+			margin: 40px;
+
+		}
+
+		
+		.card h2 {
+			font-size: 30px;
+			/*text-align: center;*/
+
+
+
+		}
+
+		.card img {
+			width: 90%;
+			padding:10px;
+		}
+
+		.card p {
+			font-family: dosis;
+			font-size: 22px;
+			width:80%;
+			text-align: center;
+		}
+
+
+
+	@media screen and (min-width: 700px){
+		nav {
+			flex-flow: row nowrap;
+			align-items:baseline;
+			height: 200px;
+
+		}
+
+		#landing {
+				display: flex;
+				flex-direction:row;
+				justify-content:center;
+				align-items:center;
+				
+		}
+
+		#deck {
+				flex-direction:row;
+				justify-content:space-between;
+		}
+
+		a {
+			/*Here is where we can remove the border*/
+			font-size: 3em;
+			border:none;
+		}
+			
+		#logoNav {
+			font-size:4em;
+		}
+	
+	}
+
+		</style>
+</head>
+<body id="body">
+
+	<nav>
+		
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+
+	<section id="landing">
+		<div id="landing message">
+			<h2>Make Creative Clever Fun Apps. Simple.</h2>
+		</div>
+		<div id="landing-graphic">
+			<img src="img/laptop.png">
+		</div>
+
+	</section>
+	<section id="deck">
+		<div class="card card img">
+				<img src="img/graphic1.png" alt="design pic">
+				<h2>Web Info Sessions</h2>
+				<p>If you have questions about your career in ...</p>
+		</div>
+		<div class="card">
+				<img src="img/graphic2.png" alt="design pic2">
+				<h2>Remote Learning</h2>
+				<p>So you can drink your own coffee ....</p>
+		</div>
+		<div class="card">
+				<img src="img/graphic3.png" alt="design pic3">
+				<h2>Remote Learning2</h2>
+				<p>So stuff like rulers and pencils can come out of your screen</p>
+		</div>
+	</section>
+	<section class="flex-container">
+			<div class="flex-item port-img-1">
+				<div class="port-info">
+				<h3>Games</h3>
+				<p>by Bill Hicks <a href="http://billhicks.com/">Quickly! go there now</a></p>
+				</div>
+			</div>
+
+			<div class="flex-item port-img-2">
+				<div class="port-info">
+				<h3>Illustrations</h3>
+				<p>by Stephen Wright <a href="https://en.wikiquote.org/wiki/Steven_Wright  ">Captain Semantics</a></p>
+				</div>
+			</div>
+
+			<div class="flex-item port-img-3">
+				<div class="port-info">
+				<h3>Characters</h3>
+				<p>by Johnny Vegas <a href="http://www.johnnyvegas.co.uk/">Loveable Mentalist</a></p>
+				</div>
+			</div>
+
+			<div class="flex-item port-img-4">
+				<div class="port-info">
+				<h3>Modelling</h3>
+				<p>by Benedict Cumberbatch<a href="http://www.bbc.co.uk/programmes/b00t4pgh">Smartypants Himself</a></p>
+				</div>
+			</div>
+
+			
+		</section>	
+
+
+
+
+
+	</section>
+</body>
+</html>

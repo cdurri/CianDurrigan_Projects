@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<style type="text/css">
+		
+		nav{
+			font-family: roboto;
+			background-color: #f5d76e;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+
+		
+		#landing {
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+		}
+
+		#landing-graphic  {
+
+		}
+
+		
+		h2 {
+			font-size: 4em;
+			font-family: Dosis, serif;
+			margin:10px;
+		}
+
+
+
+		a {
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		
+
+		#logoNav {
+			font-size: 2em;
+			font-weight: bold;
+			}
+
+		#deck {/*container for cards*/
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			background-color: green;
+		}
+
+		.card { /*class for each individual card*/
+			height: 400px;
+			width:500px;
+			background-color:white;
+
+		}
+
+		#cards { /*id for each card*/
+
+
+
+		}
+
+
+		.card h2 {
+			font-size: 40px;
+			text-align: center;
+
+
+		}
+
+		.card img {
+			display: flex;
+			flex-flow: column nowrap;
+			width: 100%;
+			align-items:center;
+			justify-content:center;
+
+		}
+
+		.card p {
+			font-family: dosis;
+			font-size: 22px;
+		}
+
+
+
+	@media screen and (min-width: 700px){
+		nav {
+			flex-flow: row nowrap;
+			align-items:baseline;
+			height: 200px;
+
+		}
+
+		#landing {
+				display: flex;
+				flex-direction:row;
+				justify-content:center;
+				align-items:center;
+				
+		}
+
+		a {
+			/*Here is where we can remove the border*/
+			font-size: 3em;
+			border:none;
+		}
+			
+		#logoNav {
+			font-size:4em;
+
+		}
+
+		</style>
+</head>
+<body style="background-color:#f5d76e">
+
+	<nav>
+		
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+
+	<section id="landing">
+		<div id="landing message">
+			<h2>Make Creative Clever Fun Apps. Simple.</h2>
+		</div>
+		<div id="landing-graphic">
+			<img src="img/laptop.png">
+		</div>
+
+	</section>
+	<section id="deck">
+		<div class="card">
+				<img src="img/graphic1.png" alt="design pic">
+				<h2>Web Info Sessions</h2>
+				<p>If you have questions about your career in ...</p>
+		</div>
+		<div id="card3" class="card">
+				<img src="img/graphic2.png" alt="design pic2"
+				<h2>Remote Learning</h2>
+		</div>
+		<div id="card3" class="card">
+				<img src="img/graphic3.png" alt="design pic3"
+				<h2>Remote Learning2</h2>
+		</div>
+	</section>
+		
+
+
+
+
+
+	</section>
+</body>
+</html>
