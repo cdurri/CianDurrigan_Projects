@@ -1,0 +1,251 @@
+	
+		nav 	{
+
+			font-family: roboto;
+			/*background-color: #eee;*/
+			margin: 30px auto;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0px;	
+
+		}
+
+		a{
+			text-decoration: none;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px;
+			text-align: center;
+			font-size: 40px;
+			border-bottom: 1px solid green;
+
+		}
+
+		#landing {
+
+			display: flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+
+		}
+
+		#contact {
+
+				font-size: 40px;
+				font-family: Dosis;
+
+		}
+
+		#addressmap {
+
+			text-align: center;
+		}
+
+		#addressbox {
+
+			margin-top: 40px;
+			margin-bottom: 40px;
+
+		}
+
+
+		#addressbox p {
+
+				padding: 5px;
+				font-family: Dosis;
+
+		}
+
+	
+		label.field {
+
+	            display: block;
+	            text-align: right;
+	            width: 100px;
+	            float: left;
+
+	    }
+
+	    input {
+	            width: 200px;
+	            border-radius: 5px;
+	            padding: 6px 8px;
+	            margin: 10px;
+	         }
+
+	    .field {
+	            padding: 6px 8px;
+	    }
+
+
+	    #callback, #send {
+
+	         	width: 200px;
+	         	height: 50px;
+
+	    }
+
+	     #buttons {
+
+	         display: flex;
+	         flex-direction: column;
+	         padding-top: 50px;
+	         justify-content:center;
+	    }
+
+	     fieldset{
+			 
+	            width: 450px;
+	            border: 2px solid black;
+	            padding: 20px;
+	            background-color:rgba(129, 187, 201,.2);
+	            margin-top: 20px;
+   
+	    }
+
+	    #form {
+
+	    	margin: 20px 0 20px 60px;
+
+	    }
+
+
+		@media screen and (min-width: 1000px) {
+
+			nav{
+
+				font-family: roboto;
+				width: 100%;
+				height: 100px;
+				display: flex;
+				flex-direction: row;
+				padding: 0;
+				flex-flow: row;
+				align-items:baseline;	
+			}
+					
+			a{
+				text-decoration: none;
+				color:#000000;
+				flex:1;
+				height: 30px;
+				font-family: Dosis;
+				padding:10px;
+				text-align: center;
+				font-size: 20px;
+			}
+
+			#logoNav{
+				font-size: 40px;
+				font-weight: bold;
+				padding-bottom: 28px;
+			}
+
+			#contact {
+
+				font-size: 40px;
+				text-align: center;
+				font-family: Dosis;
+
+			}
+
+			.container {
+
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+
+			}
+
+			#addressbox {
+
+				width: 200px;
+				height: 175px;
+				border: 2px solid black;
+				margin-left: 40px;
+				margin-top: 20px;
+
+			}
+
+			#addressbox p {
+
+				padding: 5px;
+				font-family: Dosis;
+
+			}
+
+			#mapbox {
+
+				width: 600px;
+				height: 300px;
+				border: 2px solid black;
+				margin-left: 40px;
+				margin-top: 20px;
+
+			}
+
+			 label.field {
+	            display: block;
+	            text-align: right;
+	            width: 100px;
+	            float: left;
+
+	         }
+
+	         input {
+	            width: 200px;
+	            border-radius: 5px;
+	            padding: 6px 8px;
+	            margin: 10px;
+	         }
+
+	         .field {
+	            padding: 6px 8px;
+	         }
+
+			 fieldset{
+			 
+	            width: 450px;
+	            border: 2px solid black;
+	            padding: 20px;
+	            background-color:rgba(129, 187, 201,.2);
+	            margin-top: 20px;
+	          
+	         }
+
+	        
+	         #callback, #send {
+
+	         	width: 200px;
+	         	height: 50px;
+
+	         }
+
+	         #buttons {
+
+	         	display: flex;
+	         	flex-direction: row;
+	         	padding-top: 50px;
+
+	         }
+
+	         textarea {
+
+	    		width: 100%;
+	    		height: 150px;
+	    		line-height: 150%;
+	    		resize:vertical;
+			}
+
+			#addressmap {
+
+				display: flex;
+				flex-direction: column;
+
+			}
+
+		}
