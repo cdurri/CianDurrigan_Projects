@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GoCar</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/contactus.css">
+
+</head>
+<body>
+
+	<nav>
+
+		<a id="logoNav">GoCar</a>
+		<a id="menu">Menu</a>
+		<a href="../index.html" class="hide-menu">Home</a>
+		<a href="rates.html" class="hide-menu">Rates</a>
+		<a href="#" class="hide-menu">Locations</a>
+		<a href="#" class="hide-menu">Testimonials</a>
+		<a href="faq.html" class="hide-menu">FAQs</a>
+		<a href="#" class="hide-menu">Contact Us</a>
+		<a href="#" class="hide-menu">Log In</a>
+
+	</nav>
+
+	
+	<div class="wrapper1">
+
+		<div id="contact-us">Contact Us</div>
+
+		<div id="address-box">
+
+			<p>39 Saintfield Road</p>
+			<p>Santry</p>
+			<p>Dublin 9</p>
+			<p>Ireland</p>
+			<p>T: 1890 446 227</p>
+			<p>E: info@gocar.ie</p>
+
+		</div>
+
+		<form>
+			<fieldset>
+				<p>
+			    	<label for="name" class="field">Name:</label>
+			        <input type="text" id="name" name="name" placeholder="enter your name" required />
+			    </p>
+			    <p>
+			    	<label for="telephone" class="field">Telephone:</label>
+			    	<input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="enter telephone number">
+			    </p>
+			    <p>
+			    	<label for="email" class="field">Email:</label>
+			    	<input type="email" autofocus id="email" name="email" placeholder="enter email address" required />
+			    </p>
+			    <p>
+			     	<label for="message" class="field">Message:</label>
+				    <textarea id="message" rows="2" cols="30" placeholder="your message"></textarea>
+			    </p>
+			    <p id="button">
+			    	 <input type="submit" value="Contact Us">
+			    </p>
+			</fieldset>
+		</form>
+	</div>
+
+	<div class="wrapper2">
+
+		<div id="mapbox">
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9515.555545663276!2d-6.246458649999999!3d53.398927500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssantry+dublin+9!5e0!3m2!1sen!2sie!4v1444163167574" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		</div>
+	</div>
+
+	<footer>
+			<img src="../images/facebook.svg" class="socialmedia" id="facebook">
+			<img src="../images/linkedin.svg" class="socialmedia" id="linkedin">
+			<img src="../images/twitter.svg" class="socialmedia" id="twitter">
+	</footer>
+	
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/contactus.js"></script> <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+@media screen and (min-width: 700px) {
+
+				html, body {
+
+					height: 100%;
+					margin: 0;
+				}
+
+				.wrapper {
+
+					min-height: 100%;
+					margin-bottom: -100px;
+
+				}
+
+				.wrapper:after {
+
+					content: "";
+					display: block;
+				}
+
+				.wrapper:after, footer {
+
+					height: 100px;
+				}
+
+				footer {
+
+					background-color: cornflowerblue;
+				}
+
+
+			}

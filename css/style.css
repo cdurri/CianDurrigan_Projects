@@ -1,230 +1,437 @@
-		body {
+html, body {
+
+	height: 100%;
+
+	margin: 0;
+
+	background-image: url("images/dublinnightscape_1.jpg");
+}
+
+nav {
+
+	font-family: roboto;
+
+	margin: 30px auto;
+
+	width: 100%;
+
+	display: flex;
+
+	flex-direction: column;
+
+	align-items:stretch;
+
+	border-radius: 10px;
+
+	padding: 0px;
+
+	background-color: #FFFFF0;	
+
+}
+
+a{
+
+	text-decoration: none;
+
+	height: 15px;
+
+	font-family: Dosis;
+
+	padding:20px;
+
+	text-align: center;
+
+	font-size: 20px;
+
+	border-bottom: 1px solid green;
+
+}
 
 
-		}
+#logoNav {
 
-		nav {
+	font-size: 40px;
 
-			font-family: roboto;
-			/*background-color: #eee;*/
-			margin: 30px auto;
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items:stretch;
-			border-radius: 10px;
-			padding: 0px;	
+	font-weight: bold;
 
-		}
+	padding-bottom: 28px;
+}
 
-		a{
-			text-decoration: none;
-			height: 30px;
-			font-family: Dosis;
-			padding:20px;
-			text-align: center;
-			font-size: 40px;
-			border-bottom: 1px solid green;
+.wrapper{
 
-		}
+	display: flex;
 
-		#logoNav {
+	flex-direction:column;
 
-			font-size: 40px;
-			font-weight: bold;
-		}
+	justify-content:center;
 
-		#landing{
-			display: flex;
-			flex-direction:column;
-			justify-content:center;
-			align-items:center;
+	align-items:center;
 
-		}
+	min-height: 100%;
 
-		#landing-heading {
+	margin-bottom: 100px;
 
-			font-size: 30px;
-			font-family: Dosis;
-			text-align: center;
-			text-decoration: underline;
-			color: green;
-			
-		}
+	background-image: url("../images/dublinnightscape_1.jpg");
 
-		#landing-message {
+	background-size: cover;
 
-			font-size: 18px;
-			font-family: Dosis;
-			margin-top: 20px;
-		}
+}
 
-		#landing-tagline {
+.wrapper:after {
 
-			font-size: 18px;
-			margin-top: 40px;
-			font-family: Dosis;
-			color: red;
-		}
+	content: "";
 
-		#sign-up {
+	display: block;
+}
 
-			margin-top: 40px;
-			border: 2px solid black;
-			height: 100px;
-			width: 200px;
-			background-color: red;
+.wrapper:after, footer {
 
-		}
+	height: 100px;
+}
 
-		#log-in {
+#landing-heading {
 
-			margin-top: 40px;
-			border: 2px solid black;
-			height: 100px;
-			width: 200px;
-			background-color: green;
+	font-size: 30px;
 
-		}
+	font-family: Dosis;
 
-		#buttons {
+	text-align: center;
 
-			text-align: center;
-			font-size: 25px;
-			font-family: Dosis;
-			padding-bottom: 40px;
-		}
+	text-decoration: underline;
 
-		#buttons p {
+	color: green;
 
-			padding-top: 25px;
+}
 
-		}
+#landing-message {
 
-		
-		@media screen and (min-width: 700px) {
+	font-size: 18px;
 
-		nav{
+	font-family: Dosis;
 
-			font-family: roboto;
-			width: 100%;
-			height: 100px;
-			display: flex;
-			flex-direction: row;
-			padding: 0px;
-			flex-flow: row;
-			align-items:baseline;	
-		}
+	margin-top: 20px;
+
+}
+
+#landing-tagline {
+
+	font-size: 18px;
+
+	margin-top: 40px;
+
+	font-family: Dosis;
+
+	color: red;
+}
+
+#sign-up {
+
+	margin-top: 40px;
+
+	border: 1px solid black;
+
+	height: 100px;
+
+	width: 200px;
+
+	background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+#log-in {
+
+	margin-top: 40px;
+
+	border: 1px solid black;
+
+	height: 100px;
+
+	width: 200px;
+
+	background-color: rgba(0, 255, 0, 0.5);
+
+}
+
+#buttons {
+
+	text-align: center;
+
+	font-size: 25px;
+
+	font-family: Dosis;
+
+	padding-bottom: 40px;
+}
+
+#buttons p {
+
+	padding-top: 25px;
+
+}
+
+.socialmedia {
+
+	width: 60px;
+
+	height: 60px;
+
+	padding: 10px;
+
+}
+
+footer {
+
+	display: flex;
+
+	justify-content:center;
+
+	align-items:center;
+
+	border-top: 1px solid green;
+
+	background-color: #FFFFF0;
+}
+
+@media screen and (max-width: 700px) {
+
+
+	nav > .hide-menu {
 				
-		a{
-			text-decoration: none;
-			color:#000000;
-			flex:1;
-			height: 30px;
-			font-family: Dosis;
-			padding:10px;
-			text-align: center;
-			font-size: 20px;
-		}
+		display:none;
+
+	}
+
+}
 
 
-		#logoNav{
-			font-size: 40px;
-			font-weight: bold;
-			padding-bottom: 28px;
-			}
+@media screen and (min-width: 700px) {
 
-		#landing {
 
-			display: flex;
-			font-family: Dosis;
-			justify-content: center;
-			align-items: center;
-			flex-flow: wrap;
-			flex-direction: column;
-			justify-content: flex-start;
-			margin: 0 auto;
-			width: 80%;
-			height: 80%;
-			border: 2px solid #d7eed5;
+html, body {
 
-		}
+	height: 100%;
 
-		#landing-heading {
+	margin: 0;
 
-			font-size: 50px;
-			text-decoration: underline;
-			color: #1c7422;
-			margin-top: 20px;
-			
-		}
+}
 
-		#landing-message {
+nav{
 
-			margin-top: 60px;
+	font-family: roboto;
 
-		}
+	width: 100%;
 
-		#landing-message p {
+	height: 100px;
 
-			font-size: 25px;
+	display: flex;
 
-		}
+	flex-direction: row;
 
-		#landing-tagline {
+	padding: 0px;
 
-			margin-top: 60px;
-		}
+	flex-flow: row;
 
-		#landing-tagline p {
+	align-items:baseline;
 
-			font-size: 25px;
-			color: red;
-		}
+	background-color: #FFFFF0;
 
-		#buttons {
+	margin-top: 0px;
 
-			display: flex;
-			flex-direction: row;
-			width: 70%;
-			margin-top: 20px;
+	border-radius: 0px;
 
-		}
+}
 
-		#sign-up {
+a{
 
-			margin: auto;
-			width: 35%;
-			height: 15%;
-			margin-top: 50px;
-			border: 2px solid black;
-			background-color: red;
+	text-decoration: none;
 
-		}
+	color:#000000;
 
-		#log-in {
+	flex:1;
 
-			margin: auto;
-			width: 35%;
-			height: 15%;
-			margin-top: 50px;
-			border: 2px solid black;
-			background-color: green;
+	height: 30px;
 
-		}
+	font-family: Dosis;
 
-		#sign-up p {
+	padding:10px;
 
-			text-align: center;
-			padding-top: 25px;
-			font-size: 26px;
-			
-		}
+	text-align: center;
 
-		#log-in p {
+	font-size: 20px;
+}
 
-			text-align: center;
-			padding-top: 25px;
-			font-size: 26px;
 
-		}
+#logoNav{
+
+	font-size: 40px;
+
+	font-weight: bold;
+
+	padding-bottom: 28px;
+}
+
+.wrapper {
+
+	display: flex;
+
+	font-family: Dosis;
+
+	justify-content: center;
+
+	align-items: center;
+
+	flex-flow: wrap;
+
+	flex-direction: column;
+
+	justify-content: flex-start;
+
+	width: 100%;
+
+	min-height: 100%;
+
+	margin-bottom: 100px;
+
+	margin-top: 0px;
+
+	border: 2px solid #d7eed5;
+
+	background-image: url("../images/dublinnightscape_1.jpg");
+
+	background-size: cover;
+
+}
+
+.wrapper:after {
+
+	content: "";
+
+	display: block;
+}
+
+.wrapper:after, footer {
+
+	height: 100px;
+}
+
+#landing-heading {
+
+	font-size: 50px;
+
+	text-decoration: underline;
+
+	color: #1c7422;
+
+	margin-top: 20px;
+
+}
+
+#landing-message {
+
+	margin-top: 60px;
+}
+
+#landing-message p {
+
+	font-size: 25px;
+
+}
+
+#landing-tagline {
+
+	margin-top: 60px;
+}
+
+#landing-tagline p {
+
+	font-size: 25px;
+
+	color: red;
+}
+
+#buttons {
+
+	display: flex;
+
+	flex-direction: row;
+
+	width: 70%;
+
+	margin-top: 20px;
+
+}
+
+#sign-up {
+
+	margin: auto;
+
+	width: 35%;
+
+	height: 15%;
+
+	margin-top: 50px;
+
+	border: 1px solid black;
+
+	background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+#log-in {
+
+	margin: auto;
+
+	width: 35%;
+
+	height: 15%;
+
+	margin-top: 50px;
+
+	border: 1px solid black;
+
+	background-color: rgba(0, 255, 0, 0.5);
+
+}
+
+#sign-up p {
+
+	text-align: center;
+
+	padding-top: 25px;
+
+	font-size: 26px;
+
+}
+
+#log-in p {
+
+	text-align: center;
+
+	padding-top: 25px;
+
+	font-size: 26px;
+
+}
+
+.socialmedia {
+
+	width: 60px;
+
+	height: 60px;
+
+	padding: 10px;
+
+}
+
+footer {
+
+	display: flex;
+
+	align-items:center;
+
+	border-top: 1px solid green;
+	
+	background-color: #FFFFF0;
+}
+
+}
