@@ -4,7 +4,6 @@ html, body {
 
 	margin: 0;
 
-	background-image: url("images/dublinnightscape_1.jpg");
 }
 
 nav {
@@ -29,7 +28,7 @@ nav {
 
 }
 
-a{
+a {
 
 	text-decoration: none;
 
@@ -47,6 +46,16 @@ a{
 
 }
 
+#buttons > #sign-up > #signup_button {
+
+	border: none;
+
+}
+
+#buttons > #log-in > #login_button {
+
+	border: none;
+}
 
 #logoNav {
 

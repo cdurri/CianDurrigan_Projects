@@ -5,7 +5,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/locations.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
 
 </head>
 <body>
@@ -16,39 +16,24 @@
 			<a id="menu">Menu</a>
 			<a href="../index.html" class="hide-menu">Home</a>
 			<a href="rates.html" class="hide-menu">Rates</a>
-			<a href="#" class="hide-menu">Locations</a>
+			<a href="locations.html" class="hide-menu">Locations</a>
 			<a href="faq.html" class="hide-menu">FAQs</a>
 			<a href="contactus.html" class="hide-menu">Contact Us</a>
-			<a href="login.html" class="hide-menu">Log In</a>
+			<a href="#" class="hide-menu">Log In</a>
 		</nav>
 
 		<div class="wrapper">
 
-			<div id="cityname"></div>
-
-			<br/><br/><br/>
-
-			<div id="mapbox"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d19053.182114357056!2d-6.281258852957053!3d53.34956123846512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdublin+city+center!5e0!3m2!1sen!2sie!4v1450714979183"
-									 width="100%" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-
-			<div id="location_select">
-
-				<h1>Please Select Location:</h1>
-
-			</div>
-
-			<div id="drop-down_box">
-
-				<select id="loc">
-
-					  <option value="0">Baggot Street</option>
-					  <option value="1">Sandyford</option>
-					  <option value="2">Malahide</option>
-
-				</select>
-
-			</div>
+            <form>
+                <fieldset>
+                    <legend>Log In</legend>
+                    <label for="fname">Username:</label>
+                    <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]"/><br><br>
+                    <label for="fname">Password:</label>
+                    <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]"/><br><br>
+                    <input type="submit" id="login" value="Log In">
+                </fieldset>
+            </form>
 
 		</div>
 
@@ -61,7 +46,6 @@
 
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/locations.js"></script> <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
-
+        <script type="text/javascript" src="../js/signup.js"></script> <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
 </body>
 </html>
